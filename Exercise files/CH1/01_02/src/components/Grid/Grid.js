@@ -1,11 +1,22 @@
 import React from "react";
+import GridItem from './GridItem'
+import styles from './Grid.module.css'
 
-const Grid = () => {
+function Grid({ facts }) {
+  const renderFacts = () => {
+    return facts.map(item => 
+      <GridItem 
+        key={item.id}
+        fact={item}
+      />
+    );
+  };
+
   return (
-    <div>
-      <h1>Grid</h1>
-    </div>
+    <section className={styles.grid}>
+      {renderFacts()}
+    </section>
   );
-};
+}
 
 export default Grid;
