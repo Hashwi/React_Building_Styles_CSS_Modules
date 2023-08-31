@@ -1,7 +1,11 @@
 import React from "react";
 
 const Smoke = () => {
-  return <div>Smoke</div>;
+  return (
+    <div>
+      <h1>Smoke</h1>
+    </div>
+  );
 };
 
 export default Smoke;

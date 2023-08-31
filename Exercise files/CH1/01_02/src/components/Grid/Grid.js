@@ -1,11 +1,11 @@
 import React from "react";
 
-const Rocket = () => {
+const Grid = () => {
   return (
     <div>
-      <h1>Rocket</h1>
+      <h1>Grid</h1>
     </div>
   );
 };
 
-export default Rocket;
+export default Grid;
